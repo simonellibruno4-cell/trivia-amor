@@ -24,7 +24,7 @@ if st.session_state.pregunta == 1:
             st.session_state.puntos += 1
         else:
             st.error("era Devil's Advocate 😔.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 2
         st.rerun()
 
@@ -37,7 +37,7 @@ elif st.session_state.pregunta == 2:
             st.session_state.puntos += 1
         else:
             st.error("¡No! Era la de the exorcist believer.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 3
         st.rerun()
 
@@ -50,7 +50,7 @@ elif st.session_state.pregunta == 3:
             st.session_state.puntos += 1
         else:
             st.error("¡No! comimos unas hamburguesas en motz.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 4
         st.rerun()
 
@@ -63,7 +63,7 @@ elif st.session_state.pregunta == 4:
             st.session_state.puntos += 1
         else:
             st.error("¡No! fuimos al ginecologo porque te desgarre la chucha.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 5
         st.rerun()
 
@@ -76,7 +76,7 @@ elif st.session_state.pregunta == 5:
             st.session_state.puntos += 1
         else:
             st.error("¡No! comimos la hamburguesa de doritos.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 6
         st.rerun()
 
@@ -89,7 +89,7 @@ elif st.session_state.pregunta == 6:
             st.session_state.puntos += 1
         else:
             st.error("¡No! Hicimos nuestro primer video.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 7
         st.rerun()
 
@@ -102,7 +102,7 @@ elif st.session_state.pregunta == 7:
             st.session_state.puntos += 1
         else:
             st.error("¡No! era quasoooon.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 8
         st.rerun()
 
@@ -115,7 +115,7 @@ elif st.session_state.pregunta == 8:
             st.session_state.puntos += 1
         else:
             st.error("¡No! era entrenando a mi dragon 🏋️🐉.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 9
         st.rerun()
 
@@ -128,7 +128,7 @@ elif st.session_state.pregunta == 9:
             st.session_state.puntos += 1
         else:
             st.error("¡No! fuimos atipico.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 10
         st.rerun()
 
@@ -141,7 +141,7 @@ elif st.session_state.pregunta == 10:
             st.session_state.puntos += 1
         else:
             st.error("¡No! era el cuadro que tenes colgado😔.")
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 11
         st.rerun()
 
@@ -151,7 +151,7 @@ elif st.session_state.pregunta == 11:
     if st.button("Enviar Final"):
         st.markdown("<h4 style='color: #FF69B4;'>¡Correcto! que rico me entregas el chiquito(cualquier respuesta es correcta jiji). 🔥</h4>", unsafe_allow_html=True)
         st.session_state.puntos += 1
-        time.sleep(2)
+        time.sleep(5)
         st.session_state.pregunta = 12
         st.rerun()
 
