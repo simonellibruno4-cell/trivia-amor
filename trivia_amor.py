@@ -71,7 +71,7 @@ elif st.session_state.pregunta == 5:
     st.markdown("<h3 style='color: #FFFF00;'>5. ¿te acordas que hamburguesa comimos un 5/6 de mayo de 2025?</h3>", unsafe_allow_html=True)
     res = st.text_input("Tu respuesta:", key="p5").strip().lower()
     if st.button("Enviar"):
-        if "dorito" in res:
+       if any(x in res for x in ["doritos", "la de doritos", "dorimotz", "la de motz de doritos", "hamburguesa de doritos"]):
             st.success("¡Correcto! Que rica esa hamburguesa, podriamos ir a comer alli de nuevo 🍔. ✅")
             st.session_state.puntos += 1
         else:
@@ -84,7 +84,7 @@ elif st.session_state.pregunta == 6:
     st.markdown("<h3 style='color: #FFFF00;'>6. ¿Qué hicimos despues del cumpleaños de santy julio de 2024?</h3>", unsafe_allow_html=True)
     res = st.text_input("Tu respuesta:", key="p6").strip().lower()
     if st.button("Enviar"):
-        if "video" in res:
+        if any(x in res for x in ["primer video", "el video", "video", "el primer video"]):
             st.success("¡Correcto! Es hermoso el video. ✅")
             st.session_state.puntos += 1
         else:
@@ -110,11 +110,11 @@ elif st.session_state.pregunta == 8:
     st.markdown("<h3 style='color: #FFFF00;'>8. ¿Qué pelicula vimos cuando estuvimos en mi casa solos?</h3>", unsafe_allow_html=True)
     res = st.text_input("Tu respuesta:", key="p8").strip().lower()
     if st.button("Enviar"):
-        if "dragon" in res:
+        if any(x in res for x in ["como entrenar a tu dragon", "dragon", "entrenar a tu dragon"]):
             st.success("¡Correcto! que buena pelicula, me faltaba ver 1 mas 🐉. ✅")
             st.session_state.puntos += 1
         else:
-            st.error("¡No! era entrenando a mi dragon 🏋️🐉.")
+            st.error("¡No! era como entrenar a tu dragon 🏋️🐉.")
         time.sleep(5)
         st.session_state.pregunta = 9
         st.rerun()
@@ -136,7 +136,7 @@ elif st.session_state.pregunta == 10:
     st.markdown("<h3 style='color: #FFFF00;'>10. ¿Qué te regale para un cumple mes de febrero del 2025?</h3>", unsafe_allow_html=True)
     res = st.text_input("Tu respuesta:", key="p10").strip().lower()
     if st.button("Enviar"):
-        if "cuadro" in res:
+        if any(x in res for x in ["cuadro", "el cuadro", "la pintura"]):
             st.success("¡Correcto! todo un picasso, un salvador dali. ✅")
             st.session_state.puntos += 1
         else:
@@ -162,7 +162,7 @@ elif st.session_state.pregunta == 12:
     st.markdown(f"<h1 style='color: #FF4B4B; text-align: center;'>¡FELICITACIONES! Lograste {st.session_state.puntos} puntos. ❤️</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='color: #FF00FF;'>===========================================</h2>", unsafe_allow_html=True)
     
-    st.markdown("<h3 style='color: #FF4B4B;'>Feliz mes amooor 1 año y 6 meses wooow❤️.</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #FF4B4B;'>Feliz mes amooor 2 año y 6 meses wooow❤️.</h3>", unsafe_allow_html=True)
     st.write("Sos todo para mi amor, gracias por todo lo que haces por mi y por todo mi amor.")
     st.write("Espero ser tu compañero de vida hasta que nos mueramos, y despues de muertos tambien jajaja.")
     st.markdown("<p style='color: #FF4B4B; font-weight: bold;'>Te amo con todo mi corazon, sos lo mejor que me paso en la vida, y espero que podamos seguir creando recuerdos hermosos juntos por muchos años mas❤️♾️.</p>", unsafe_allow_html=True)
